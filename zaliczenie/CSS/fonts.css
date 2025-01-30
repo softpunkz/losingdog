@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Happy Times';
+    font-style: normal;
+    font-weight: normal;
+    src: url(fonts/happy-times-at-the-ikob-webfont.woff2) format('woff2');
+            }
+@font-face {
+    font-family: 'Krona One';
+                src: url(fonts/KronaOne-Regular.woff) format('woff');
+            
+            }
+@font-face {
+    font-family: 'Playfair Display';
+    src: url(fonts/PlayfairDisplay-VariableFont_wght.woff) format('woff');
+            }

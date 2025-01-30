@@ -1,0 +1,239 @@
+@font-face {
+  font-family: "Krona One";
+  src: url("../fonts/KronaOne-Regular.woff") format("woff");
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 1fr 2fr 40px;
+  grid-template-rows: auto;
+  overflow: visible;
+  height: auto;
+}
+
+.nav {
+  display: block;
+  grid-column: 1;
+  padding: 0px 40px 22px;
+  font-family: "Krona One";
+  text-align: center;
+  line-height: 55px;
+  gap: 50px;
+  position: sticky;
+  top: 10px;
+  height: fit-content;
+}
+
+.button1,
+.button2,
+.button3,
+.button4,
+.button5 {
+  width: 25vw;
+  height: 60px;
+  background-color: beige;
+  border: 2px solid black;
+  border-radius: 30px;
+  place-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Krona One";
+  text-align: center;
+  font-size: 140%;
+  line-height: 55px;
+}
+
+.button1:hover,
+.button2:hover,
+.button3:hover,
+.button4:hover,
+.button5:hover {
+  background-color: black;
+  color: beige;
+  border-color: beige;
+}
+
+.header {
+  position: sticky;
+  top: 20px;
+}
+
+.link {
+  text-decoration: none;
+  display: block;
+  color: black;
+}
+
+.link:hover {
+  color: beige;
+}
+
+.section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  display: none;
+  grid-column: 2;
+  grid-row: 1;
+  background-color: beige;
+  border: 2px solid black;
+  border-radius: 30px;
+  margin-bottom: 50px;
+}
+
+.section.active {
+  opacity: 1;
+  transform: translateY(0);
+  display: block;
+}
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  max-width: 100%;
+}
+
+.row {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  place-content: center;
+}
+
+.row img {
+  max-width: 100%;
+  height: auto;
+  flex: 1 1 calc(50% - 10px);
+}
+
+.row img:nth-child(1) {
+  max-width: 530px;
+  height: auto;
+}
+
+.row img:nth-child(2) {
+  max-width: 200px;
+  height: auto;
+}
+
+.il {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  place-content: center;
+}
+
+.il img {
+  max-width: 40%;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.daty {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.wystawy {
+  text-align: center;
+  line-height: 1.5;
+}
+
+body {
+  background-image: url("../tutorial data/tlo.jpg");
+  font-family: Helvetica, sans-serif;
+  background-attachment: fixed;
+}
+
+h4 {
+  font-family: "Krona One";
+  text-align: center;
+  font-size: 40px;
+}
+
+h3 {
+  font-family: helvetica, sans-serif;
+  text-align: center;
+  color: chartreuse;
+}
+
+h2 {
+  font-family: "Krona One";
+  padding: 20px 40px 0px;
+}
+
+h1 {
+  font-family: "Krona One";
+  font-size: 350%;
+  color: beige;
+  padding: 0px 80px;
+}
+
+p {
+  font-size: large;
+  padding: 0px 40px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+@media (min-width: 500px) {
+  p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .button3 {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .button1,
+  .button2,
+  .button4,
+  .button5 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .row img {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav {
+    box-sizing: border-box;
+  }
+
+  .button1,
+  .button2,
+  .button3,
+  .button4,
+  .button5 {
+    width: auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  .image {
+    width: 20em;
+  }
+}
